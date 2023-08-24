@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         button_call.setOnClickListener{
-            Intent(Intent.ACTION_DIAL, Uri.parse("$edittext_number")).also { startActivity(it) }
+            Intent(Intent.ACTION_DIAL).setData(Uri.parse("tel:${edittext_number.text.toString()}")).also { startActivity(it) }
         }
 
         button_calllog.setOnClickListener {
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         button_gallery.setOnClickListener {
-            Intent(Intent.ACTION_VIEW).setType("Images/*").also { startActivity(it) }
+            Intent(Intent.ACTION_VIEW).setType("image/*").also { startActivity(it) }
         }
 
         button_camera.setOnClickListener {

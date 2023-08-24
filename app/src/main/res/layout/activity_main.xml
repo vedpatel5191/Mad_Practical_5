@@ -151,14 +151,6 @@
                app:layout_constraintBaseline_toBaselineOf="@id/text_alarm" />
 
 
-
-
-
-
-
-
-
-
        </androidx.constraintlayout.widget.ConstraintLayout>
    </androidx.core.widget.NestedScrollView>
 

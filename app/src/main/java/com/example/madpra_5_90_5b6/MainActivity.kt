@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         button_gallery.setOnClickListener {
-            Intent(Intent.ACTION_VIEW).setType("Images/*").also { startActivity(it) }
+            Intent(Intent.ACTION_VIEW).setType("image/*").also { startActivity(it) }
         }
 
         button_camera.setOnClickListener {
